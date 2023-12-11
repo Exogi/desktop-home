@@ -1,13 +1,340 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="../dist/styles.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-red-500">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/styles.css" rel="stylesheet" />
+    <script src="/src/script.js" defer></script>
+  </head>
+  <body>
+    <main class="bg-light max-w-[1440px] mx-auto bg-cover">
+      <div class="block lg:hidden absolute w-full z-0">
+        <div
+          class="relative bg-no-repeat bg-contain z-0"
+          style="
+            aspect-ratio: 1.63;
+            background-image: url(../dist/images/mobile-bg-circle.svg);
+          "
+        ></div>
+      </div>
+      <div class="hidden lg:block absolute bg-contain"></div>
+      <nav
+        class="flex items-center mx-auto font-ps font-bold max-w-[1110px] pt-6 px-4"
+      >
+        <a class="z-10" href="index.html"
+          ><img src="../dist/images/logo_payapi1.png" alt="Payapi"
+        /></a>
+        
+        <ul class="ml-14 flex items-center gap-6 text-base text-secondary">
+          <li>
+            <a class="hover:opacity-100 opacity-70 z-10" href="/pricing/"
+              >Pricing</a
+            >
+          </li>
+          <li>
+            <a class="hover:opacity-100 opacity-70 z-10" href="/about/"
+              >About</a
+            >
+          </li>
+          <li>
+            <a class="hover:opacity-100 opacity-70 z-10" href="/contact/"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button
+          class="min-h-[48px] ml-auto bg-btn_primary text-white px-5 py-2 rounded-full hover:bg-btn_secondary shadow-custom z-10"
+        >
+          Schedule a Demo
+        </button>
+      </nav>
+      
+      <div class="max-w-[1110px] lg:px-4 text-center lg:text-start mx-auto">
+        <section class="grid grid-cols-1 lg:grid-cols-2 my-12">
+          <div
+            class="order-2 lg:order-1 flex flex-col items-center lg:items-start justify-center gap-y-6"
+          >
+            <h1
+              class="text-secondary text-[32px] sm:text-5xl lg:text-7xl font-dm font-bold max-w-[546px]"
+            >
+              Start building with our APIs for absolutely free.
+            </h1>
+            <form
+              action="submit"
+              class="max-w-[445px] w-full relative"
+              name="schedule_a_demo"
+            >
+              <input
+                type="email"
+                placeholder="Enter email address"
+                class="rounded-full px-5 py-2 shadow-custom w-full font-ps font-bold focus:outline-none text-secondary h-[48px]"
+              />
+              <button
+                class="h-[48px] bg-btn_primary text-white px-5 py-2 shadow-custom rounded-full hover:bg-btn_secondary w-full sm:max-w-[180px] sm:absolute sm:right-0 mt-2 sm:mt-0 font-bold font-ps"
+              >
+                Schedule a Demo
+              </button>
+            </form>
+            <div class="flex text-base text-secondary mt-2">
+              <p class="pl-5 opacity-70 me-1">Have any questions?</p>
+              <a href="#contact_us" class="font-bold">Contact Us</a>
+            </div>
+          </div>
+          <div
+            class="order-1 lg:order-2 mx-auto left-10 lg:left-0"
+          >
+            <div
+              class="min-w-[263px] min-h-[500px] bg-cover bg-center bg-no-repeat z-10"
+              style="background-image: url('../dist/images/image_phone1.svg')"
+            ></div>
+          </div>
+        </section>
+      </div>
+      <section class="bg-primary py-20">
+        <div class="flex flex-col lg:flex-row max-w-[1110px] lg:px-4 mx-auto">
+          <article
+            class="order-2 lg:order-1 flex flex-col gap-y-6 items-center text-center mx-auto lg:items-start lg:text-start lg:mx-0 max-w-[445px]"
+          >
+            <h1 class="text-white font-dm text-5xl tracking-[-0.369px] mb-2">
+              Who we work with
+            </h1>
+            <p
+              class="font-ps text-gray-100 text-[15px] leading-7 font-normal text-secondary opacity-70 text-center lg:text-start"
+            >
+              Today, millions of people around the world have successfully
+              connected their accounts to apps they love using our API. We
+              provide developers with the tools they need to create easy and
+              accessible experiences for their users.
+            </p>
+            <button
+              type="button"
+              class="text-white font-ps font-bold rounded-full border border-white px-5 py-2 hover:bg-white hover:text-primary text-[15px] z-10"
+            >
+              About Us
+            </button>
+          </article>
+          <figure
+            class="order-1 lg:order-2 grid grid-cols-2 md:grid-cols-3 gap-6 justify-center items-center mx-auto mt-20 my-20"
+          >
+            <img
+              src="../dist/images/logo_tesla.svg"
+              alt="Tesla"
+              class="p-2 mx-auto"
+            />
+            <img
+              src="../dist/images/logo_microsoft.svg"
+              alt="Microsoft"
+              class="p-2 mx-auto"
+            />
+            <img
+              src="../dist/images/logo_hewlettpackard.svg"
+              alt="Hp"
+              class="p-2 mx-auto"
+            />
+            <img
+              src="../dist/images/logo_oracle.svg"
+              alt="Oracle"
+              class="p-2 mx-auto"
+            />
+            <img
+              src="../dist/images/logo_google.svg"
+              alt="Google"
+              class="p-2 mx-auto"
+            />
+            <img
+              src="../dist/images/logo_nvidia.svg"
+              alt="Nvidia"
+              class="p-2 mx-auto"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 max-w-[1110px] lg:px-4 items-center mx-auto my-20 text-center lg:text-start"
+      >
+        <figure class="items-center mx-auto lg:mx-0 py-20 lg:py-10">
+          <div class="flex shrink-0">
+            <div
+              class="min-w-[445px] min-h-[284px] bg-cover bg-center bg-no-repeat"
+              style="background-image: url('../dist/images/image_codebox.png')"
+            ></div>
+          </div>
+        </figure>
+        <article
+          class="flex flex-col gap-6 items-start shrink-0 mx-auto lg:mx-0"
+        >
+          <h1
+            class="font-dm font-normal tracking-[-0.37px] text-5xl leading-[56px] text-secondary mx-auto lg:mx-0"
+          >
+            Easy to implement
+          </h1>
+          <p class="font-ps text-[#6C8294] max-w-[445px] font-normal leading-7">
+            Our API comes with just a few lines of code. You’ll be up and
+            running in no time. We built our documentation page to integrate
+            payments functionality with ease.
+          </p>
+        </article>
+        <article
+          class="order-2 lg:order-1 flex flex-col gap-6 items-start shrink-0 mx-auto lg:mx-0"
+        >
+          <h1
+            class="font-dm font-normal tracking-[-0.37px] text-5xl leading-[56px] text-secondary mx-auto lg:mx-0"
+          >
+            Simple UI & UX
+          </h1>
+          <p class="font-ps text-[#6C8294] max-w-[445px] font-normal leading-7">
+            Our pre-built form is easy to integrate in your app or website’s
+            checkout flow and designed to optimize conversion.
+          </p>
+        </article>
+
+        <figure class="order-1 lg:order-2 flex mx-auto py-20 lg:py-10">
+          <img
+            class="max-w-[263px] max-h-[500px]"
+            src="../dist/images/image_phone2.svg"
+            alt=""
+          />
+          <img
+            class="max-w-[263px] max-h-[500px]"
+            src="../dist/images/image_phone3.svg"
+            alt=""
+          />
+        </figure>
+      </section>
+      <section
+        class="flex flex-col sm:flex-row max-w-[1110px] px-4 mx-auto text-center font-ps gap-6 leading-[25px] py-10 my-20"
+      >
+        <article class="flex flex-col items-center gap-4">
+          <img
+            src="../dist/images/image_PersonalFinances.svg"
+            alt="Personal Finances"
+          />
+          <h1 class="text-secondary font-bold text-lg tracking-[-0.14px]">
+            Personal Finances
+          </h1>
+          <p
+            class="text-[#6C8294] font-normal text-[15px] tracking-[-0.12px] max-w-[350px]"
+          >
+            Consolidate financial data from multiple sources and categorize
+            transactions up to 2 years of history. Analyze reports to reconcile
+            activities in your account.
+          </p>
+        </article>
+        <article class="flex flex-col items-center gap-4">
+          <img
+            src="../dist/images/image_BankginandCoverage.svg"
+            alt="Banking & Coverage"
+          />
+          <h1 class="text-secondary font-bold text-lg tracking-[-0.14px]">
+            Banking & Coverage
+          </h1>
+          <p
+            class="text-[#6C8294] font-normal text-[15px] tracking-[-0.12px] max-w-[350px]"
+          >
+            With our platform, you can speed up account onboarding and support
+            ongoing payments for checking, savings, credit card, and brokerage
+            accounts.
+          </p>
+        </article>
+        <article class="flex flex-col items-center gap-4">
+          <img
+            src="../dist/images/image_CustomerPayments.svg"
+            alt="Customer Payments"
+          />
+          <h1 class="text-secondary font-bold text-lg tracking-[-0.14px]">
+            Consumer Payments
+          </h1>
+          <p
+            class="text-[#6C8294] font-normal text-[15px] tracking-[-0.12px] max-w-[350px]"
+          >
+            It’s easier to set up secure bank payments with us through a flow
+            designed with the user experience in mind. Customers could instantly
+            authenticate their account.
+          </p>
+        </article>
+      </section>
+      <section
+        class="flex flex-col lg:flex-row md:flex-col sm:flex-col gap-6 justify-between items-center max-w-[1110px] lg:px-4 mx-auto my-20"
+      >
+        <h1
+          class="font-dm font-normal tracking-[-0.37px] text-5xl leading-[56px] text-secondary min-w-[445px] text-center lg:text-start"
+        >
+          Ready to start?
+        </h1>
+        <form
+          action="submit"
+          class="max-w-[445px] w-full relative"
+          name="schedule_a_demo"
+        >
+          <input
+            type="email"
+            placeholder="Enter email address"
+            class="rounded-full px-5 py-2 shadow-custom w-full font-ps font-bold focus:outline-none text-secondary h-[48px]"
+          />
+          <button
+            class="h-[48px] bg-btn_primary text-white px-5 py-2 shadow-custom rounded-full hover:bg-btn_secondary w-full sm:max-w-[180px] sm:absolute sm:right-0 mt-2 sm:mt-0 font-bold font-ps"
+          >
+            Schedule a Demo
+          </button>
+        </form>
+      </section>
+      <footer class="bg-primary">
+        <!--footer NavBar-->
+        <nav
+          class="max-w-[1110px] flex flex-col sm:flex-row gap-4 items-center mx-auto font-ps font-bold px-4 py-6"
+        >
+          <div class="relative inline-block">
+            <a class="z-10" href="index.html"
+              ><img src="../dist/images/logo_payapi2.png" alt="Payapi"
+            /></a>
+          </div>
+
+          <ul
+            class="sm:ml-14 flex flex-col sm:flex-row gap-6 items-center text-base text-white"
+          >
+            <li>
+              <a class="hover:opacity-100 opacity-70 z-10" href="/pricing/"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a class="hover:opacity-100 opacity-70 z-10" href="/about/"
+                >About</a
+              >
+            </li>
+            <li>
+              <a class="hover:opacity-100 opacity-70 z-10" href="/contact/"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <div class="sm:ml-auto flex gap-6 justify-center items-center">
+            <a
+              href="https://www.facebook.com"
+              class="z-10"
+              onmouseover="changeImageColor(this,'../dist/images/icon_facebook.svg','../dist/images/icon_facebook_hover.svg')"
+              onmouseout="resetImageColor(this,'../dist/images/icon_facebook.svg')"
+              ><img src="../dist/images/icon_facebook.svg" alt="Facebook"
+            /></a>
+            <a
+              href="https://www.twitter.com"
+              class="z-10"
+              onmouseover="changeImageColor(this,'../dist/images/icon_twitter.svg','../dist/images/icon_twitter_hover.svg')"
+              onmouseout="resetImageColor(this,'../dist/images/icon_twitter.svg')"
+              ><img src="../dist/images/icon_twitter.svg" alt="Twitter"
+            /></a>
+            <a
+              href="https://www.linkedin.com"
+              class="z-10"
+              onmouseover="changeImageColor(this,'../dist/images/icon_linkedin.svg','../dist/images/icon_linkedin_hover.svg')"
+              onmouseout="resetImageColor(this,'../dist/images/icon_linkedin.svg')"
+              ><img src="../dist/images/icon_linkedin.svg" alt="LinkedIn"
+            /></a>
+          </div>
+        </nav>
+      </footer>
+    </main>
+  </body>
 </html>
